@@ -11,7 +11,7 @@ Basic outline of a Tornado web app
 - SQLAlchemy w/support for SQLite/MySQL/Postgres
 - Sessions using Memcached
 - Basic Bootstrap HTML template
-- Bootstrap v3
+- Bootstrap v3.3.6
 - JQuery v1.10.2 
 
 # How to use
