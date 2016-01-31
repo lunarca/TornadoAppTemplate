@@ -13,6 +13,7 @@ Basic outline of a Tornado web app
 - Basic Bootstrap HTML template
 - Bootstrap v3.3.6
 - JQuery v2.2.0
+- Underscore JS v1.8.3
 
 # How to use
 
