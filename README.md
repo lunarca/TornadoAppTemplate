@@ -12,7 +12,7 @@ Basic outline of a Tornado web app
 - Sessions using Memcached
 - Basic Bootstrap HTML template
 - Bootstrap v3.3.6
-- JQuery v1.10.2 
+- JQuery v2.2.0
 
 # How to use
 
