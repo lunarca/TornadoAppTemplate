@@ -4,6 +4,6 @@
 
 var app = angular.module('AppName', ["ui.router", "ngCookies" ])
 
-app.run(["$rootScope"], function($rootScope) {
+app.run(["$rootScope", function($rootScope) {
 
-});
+}]);

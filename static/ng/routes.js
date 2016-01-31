@@ -3,20 +3,21 @@
  */
 
 app.config(
-    ["$stateProvider", "$urlRouterProvider", "$httpProvider"],
-    function($stateProvider, $urlRouterProvider, $httpProvider) {
-
+    ["$stateProvider", "$urlRouterProvider", "$httpProvider", "$locationProvider",
+    function($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider) {
+        $locationProvider.html5Mode(true);
 
         $urlRouterProvider.otherwise("/login");
 
         $stateProvider
 
             .state("login", {
-                "url": "/login",
-
+                url: "/login",
+                templateUrl: "/static/ng/templates/login.html"
             })
         ;
 
         $httpProvider.defaults.xsrfHeaderName = "X-CSRFToken";
         $httpProvider.defaults.xsrfCookieName = "_xsrf";
-});
+    }
+]);
