@@ -13,7 +13,9 @@ Basic outline of a Tornado web app
 - Basic Bootstrap HTML template
 
 # JS plugins
-- Backbone v1.2.3
+
+- Angular v1.5.0rc2
+- Angular UI-Router v0.2.15
 - Bootstrap v3.3.6
 - JQuery v2.2.0
 - Underscore JS v1.8.3
