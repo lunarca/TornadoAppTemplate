@@ -19,7 +19,7 @@
 
 
 from handlers.BaseHandlers import BaseHandler
-from libs.SecurityHelpers import *
+from libs.SecurityDecorators import *
 
 
 class UserHomeHandler(BaseHandler):
