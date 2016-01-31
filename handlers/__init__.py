@@ -31,6 +31,7 @@ from handlers.PublicHandlers import *
 from handlers.ErrorHandlers import *
 from handlers.AdminHandlers import *
 from handlers.UserHandlers import *
+from handlers.MainHandlers import *
 
 ### Config
 config = ConfigManager.instance()
@@ -39,8 +40,10 @@ config = ConfigManager.instance()
 app = Application([
 
     # Static Handlers - Serves static CSS, JS and images
-    (r'/static/(.*\.(css|js|png|jpg|jpeg|svg|ttf))',
+    (r'/static/(.*\.(css|js|png|jpg|jpeg|svg|ttf|html))',
         StaticFileHandler, {'path': 'static/'}),
+
+    (r'/', MainHandler),
 
     # User Handlers -
     (r'/user', UserHomeHandler),
@@ -49,10 +52,6 @@ app = Application([
 
     # Error Handlers -
     (r'/403', ForbiddenHandler),
-
-    # Public Handlers -
-    (r'/login', LoginHandler),
-    (r'/', LoginHandler),
 
     # Catch all 404 page
     (r'(.*)', NotFoundHandler),
